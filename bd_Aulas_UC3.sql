@@ -1,0 +1,19 @@
+-- DROP DATABASE IF EXISTS Aulas_UC3;
+CREATE DATABASE Aulas_UC3;
+ 
+USE Aulas_UC3;
+ 
+DROP TABLE IF EXISTS contato;
+CREATE TABLE contato(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(60) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL
+);
+ 
+SELECT * FROM contato;
+DESC contato;
+ 
+SELECT nome
+FROM contato
+WHERE nome like 'm%'
